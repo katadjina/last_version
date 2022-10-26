@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styleQuiz.css">
+    <title>Main Page</title>
+
+    <style>
+        #mainFrame{
+            height: 600px;
+            width: 700px;
+            overflow: hidden;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="container">
+<h1>SuITs You QUIZ</h1>
+    <div id="window">
+    <iframe id="mainFrame" src="./artwork/quizPIC.jpg" title="frame" > </iframe>
+    </div>
+    <div id="next">
+        <button id="click" onclick="change()"> NEXT </button>
+    </div>
+
+</div>
+
+
+
+
+<script type="text/javascript"> 
+
+
+
+
+
+let src1 = "https://cdn-icons-png.flaticon.com/512/196/196685.png";  //testing
+let src2 = "./question/q1.html";
+let src3 = "./examples/2.jpg";
+let src4 = "./computer/index.html";
+let src5 = "./personality/index_personnality.html";
+let src6;
+let src7;
+let src8;
+let src9;
+let src10;
+
+    
+let myFrame = document.getElementById("mainFrame");
+
+
+
+
+
+
+let counter = 0;
+
+function change() {
+    
+    //const iframeWindow = myFrame.contentWindow;
+    //const iframeDocument = myFrame.contentDocument;
+
+    counter = counter + 1;
+    switch (counter) {
+        case 1:
+        myFrame.src= src1;
+        break;
+        case 2:
+        myFrame.src= src2;
+        break;
+        case 3:
+        myFrame.src= src3;
+        break;
+        case 4:
+        myFrame.src= src4;
+        break;
+        case 5:
+        myFrame.src= src5;
+        break;
+
+    }
+
+
+
+}
+   
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

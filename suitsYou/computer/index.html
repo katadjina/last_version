@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bb.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Parts Matching Game</title>
+   
+</head>
+<body>
+<!-- Timer -->
+<h1 id="time" value="15">15</h1>
+<button id="start" onclick="countdown()">PLAY</button>
+
+    <h1 id="elh1"> Match PC components</h1>
+  
+
+
+<div id="game">
+
+
+    <div class="pc">
+        <img src="./images/pc.jpeg">
+    </div> 
+
+
+    <main class="container">
+<div>
+    <ul class="draggable-list">
+        <li id="e1" draggable="true">Motherboard</li>
+        <li id="e2" draggable="true">Ventilator</li>
+        <li id="e3" draggable="true">CPU</li>
+        <li id="e4" draggable="true">Graphic & Sound Card</li>
+        <li id="e5" draggable="true">Floppy Disk</li>
+        <li id="e6" draggable="true">HDD</li>
+        <li id="e7" draggable="true">CD ROM </li>
+        <li id="e8" draggable="true">Case</li>
+    </ul>
+</div>
+<div>
+    <ul class="draggable-list">
+        <li id="s7" draggable="true">1</li>
+        <li id="s5" draggable="true">2</li>
+        <li id="s6" draggable="true">3</li>
+        <li id="s1" draggable="true">4</li>
+        <li id="s4" draggable="true">5</li>
+        <li id="s2" draggable="true">6</li>
+        <li id="s3" draggable="true">7</li>
+        <li id="s8" draggable="true">8</li>
+    </ul>
+</div>
+
+
+</main>
+
+
+
+</div>
+
+
+<div id="endMessage">
+    <h2> WELL DONE! </h2>
+      <h2> &#129321;</h2> 
+</div>
+
+
+<!-- <button onclick="function_Next_page()"> Next </button>  -->
+
+
+
+<script type="text/javascript" src="./js/script.js" > </script>
+</body>
+</html>
